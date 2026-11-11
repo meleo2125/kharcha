@@ -1,0 +1,240 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e8;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb95f", "outline": "#859490", "on-primary": "#003731", "on-surface": "#e2e2e8", "on-surface-variant": "#bacac5", "on-primary-fixed": "#00201c", "background": "#111317", "surface-dim": "#111317", "inverse-on-surface": "#2f3035", "primary-fixed": "#62fae3", "secondary-fixed": "#9cf2e8", "inverse-primary": "#006b5f", "primary-fixed-dim": "#3cddc7", "surface": "#111317", "on-background": "#e2e2e8", "surface-container": "#1e2024", "tertiary-fixed": "#ffddb8", "surface-bright": "#37393e", "primary-container": "#2dd4bf", "surface-container-low": "#1a1c20", "tertiary-container": "#ffad3a", "on-secondary-fixed-variant": "#00504a", "on-error-container": "#ffdad6", "on-secondary": "#003733", "on-secondary-container": "#9af0e5", "on-tertiary-fixed-variant": "#653e00", "on-tertiary": "#472a00", "surface-variant": "#333539", "surface-container-highest": "#333539", "on-secondary-fixed": "#00201d", "inverse-surface": "#e2e2e8", "on-tertiary-container": "#6d4400", "on-primary-container": "#00574d", "secondary-container": "#007068", "error-container": "#93000a", "on-tertiary-fixed": "#2a1700", "primary": "#57f1db", "secondary": "#80d5cb", "surface-container-high": "#282a2e", "secondary-fixed-dim": "#80d5cb", "surface-container-lowest": "#0c0e12", "on-primary-fixed-variant": "#005047", "error": "#ffb4ab", "on-error": "#690005", "outline-variant": "#3c4a46", "tertiary": "#ffd29f", "surface-tint": "#3cddc7" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1rem", "margin-desktop": "2.5rem", "space-xxs": "0.125rem", "margin": "1rem", "space-xl": "1.5rem", "gutter": "1rem", "space-2xl": "2rem", "margin-tablet": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "amount-md": ["JetBrains Mono"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "amount-hero": ["JetBrains Mono"], "headline-lg": ["Plus Jakarta Sans"], "amount-sm": ["JetBrains Mono"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "amount-hero-mobile": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "amount-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "amount-hero": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "amount-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "amount-hero-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary/20 selection:text-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl"><div class="px-gutter h-6 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span class="font-medium tracking-tight">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">5g</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-space-sm flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Kharcha Wordmark Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAdbu7jxYApk6TVDXOsyB92Fjp0hKr2X4BWR98Ib90Re8upMheI50YjmBJU8Lr0p6GSk2heTT7cPX4mCMnSa1CoOyYCXTGsz0gBth9UisZnajy1yAaTAZ0w0CNKdvc6fxye2CLgeB4lit1eNJSCxwdaDvS9IEnmC5ab2opZ1-4znNz7WDex68xKPn84kuVC7kcL2dz-gXxwmQePQvKY0YauXqkp6XDiBFosXyZksl9W"><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Add Expense</h1></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Dimmed Obsidian Dashboard Underlay Simulation -->
+<div class="px-gutter pt-space-xs pb-space-lg flex flex-col gap-space-md opacity-25 pointer-events-none select-none filter blur-[1px]">
+<div class="w-full bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-sm">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<span>TOTAL BALANCE</span>
+<span class="text-primary font-amount-sm text-amount-sm">+14.2%</span>
+</div>
+<div class="font-amount-hero text-amount-hero text-on-surface" style="font-variant-numeric: tabular-nums; font-feature-settings: &quot;tnum&quot;; font-family: Inter, sans-serif;">₹2,84,320.00</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Income</span>
+<span class="font-amount-md text-amount-md text-primary font-medium">₹1,12,000</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Expenses</span>
+<span class="font-amount-md text-amount-md text-error font-medium">₹38,450</span>
+</div>
+</div>
+</div>
+<!-- Android 15 Bottom Sheet Modal Backdrop Scrim -->
+<div class="w-full bg-surface-container-lowest/90 backdrop-blur-md rounded-t-3xl pt-space-sm pb-space-lg px-gutter shadow-2xl flex flex-col gap-space-md">
+<!-- Top Sheet Drag Handle -->
+<div class="w-full flex justify-center py-space-xs">
+<div class="w-12 h-1.5 bg-outline/40 rounded-full"></div>
+</div>
+<!-- Modal Header Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Add Expense</h2>
+<!-- Smart SMS Auto-parsed Badge Toggle -->
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high transition-colors" id="sms-toggle" onclick="toggleSMS()">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-label-sm text-primary">SMS Parsed</span>
+</button>
+</div>
+<button aria-label="Close modal" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Amount Hero Display with Blinking Cursor -->
+<div class="w-full bg-surface-container-low rounded-2xl py-space-md px-space-lg flex flex-col items-center justify-center relative overflow-hidden">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-space-xxs">Amount Spent</span>
+<div class="flex items-center justify-center font-amount-hero-mobile text-[40px] leading-tight text-on-surface tracking-tight">
+<span class="text-on-surface-variant/70 mr-1 font-amount-hero-mobile text-[32px]">₹</span>
+<span class="font-amount-hero-mobile text-[42px] font-semibold text-on-surface" id="amount-val" style="font-variant-numeric: tabular-nums; font-feature-settings: &quot;tnum&quot;; letter-spacing: -0.02em; font-family: Inter, sans-serif;">349</span>
+<span class="inline-block w-[3px] h-9 ml-1 bg-primary rounded-full animate-pulse"></span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm transition-opacity duration-300" id="sms-context">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span>
+<span>Zepto Quick Commerce • ₹349</span>
+</div>
+</div>
+<!-- Category Chips Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Category</span>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer">Edit tags</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-0.5" id="category-container">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>🍜</span><span>Food &amp; Dining</span>
+</button>
+<!-- Active Highlighted Category (Groceries) -->
+<button class="cat-pill active flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-md text-label-md transition-all shadow-sm" onclick="selectCategory(this, true)">
+<span>🛒</span><span>Groceries</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>🚖</span><span>Transport</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>🏠</span><span>Rent &amp; Bills</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>📱</span><span>Recharge &amp; WiFi</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>🧘</span><span>Health &amp; Fit</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high" onclick="selectCategory(this, false)">
+<span>🐷</span><span>Investments &amp; SIP</span>
+</button>
+</div>
+</div>
+<!-- Account Selector Segmented Pills -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Payment Method</span>
+<div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container-low rounded-xl">
+<button class="acc-btn active flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md shadow-sm transition-all truncate" onclick="selectAccount(this)">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+<span class="truncate">Kotak ••0693</span>
+</button>
+<button class="acc-btn flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" onclick="selectAccount(this)">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+<span>Cash</span>
+</button>
+<button class="acc-btn flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all truncate" onclick="selectAccount(this)">
+<span class="material-symbols-outlined text-[14px]">credit_card</span>
+<span class="truncate">HDFC Card</span>
+</button>
+</div>
+</div>
+<!-- Date & Note Multi-input Row -->
+<div class="grid grid-cols-12 gap-space-xs">
+<!-- Calendar Pill -->
+<div class="col-span-5 bg-surface-container-high rounded-xl p-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Today, 4:20 PM</span>
+</div>
+</div>
+<!-- Quick Note Field -->
+<div class="col-span-7 bg-surface-container-high rounded-xl px-space-sm py-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">edit_note</span>
+<input class="bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm w-full outline-none focus:ring-0 truncate" id="expense-note" placeholder="What was this for?..." type="text" value="Zepto Snacks">
+</div>
+</div>
+<!-- Material 3 Numeric Custom Keypad -->
+<div class="grid grid-cols-3 gap-2 w-full pt-1" id="numeric-keypad" style="font-variant-numeric: tabular-nums; font-feature-settings: &quot;tnum&quot;; font-family: Inter, sans-serif;">
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('1')">1</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('2')">2</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('3')">3</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('4')">4</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('5')">5</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('6')">6</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('7')">7</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('8')">8</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('9')">9</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('.')">.</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-on-surface font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="inputKey('0')">0</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-high active:scale-95 text-error font-amount-md text-amount-md rounded-xl flex items-center justify-center transition-all select-none" onclick="backspaceKey()">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+<!-- Bottom Action CTA -->
+<div class="w-full pt-space-xs">
+<button class="w-full h-12 bg-primary hover:bg-primary-fixed text-on-primary font-headline-sm text-headline-sm rounded-full flex items-center justify-center gap-space-xs shadow-lg transition-transform active:scale-[0.98]" id="save-btn" onclick="saveExpense()">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Save Expense</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let rawAmount = "349";
+
+  function updateAmountDisplay() {
+    const display = document.getElementById("amount-val");
+    if (!rawAmount || rawAmount === "") {
+      display.textContent = "0";
+    } else {
+      display.textContent = rawAmount;
+    }
+  }
+
+  function inputKey(val) {
+    if (rawAmount === "0" && val !== ".") {
+      rawAmount = val;
+    } else {
+      if (val === "." && rawAmount.includes(".")) return;
+      if (rawAmount.length < 9) {
+        rawAmount += val;
+      }
+    }
+    updateAmountDisplay();
+  }
+
+  function backspaceKey() {
+    if (rawAmount.length > 0) {
+      rawAmount = rawAmount.slice(0, -1);
+    }
+    if (rawAmount === "") {
+      rawAmount = "0";
+    }
+    updateAmountDisplay();
+  }
+
+  function selectCategory(el, isInitial) {
+    const container = document.getElementById("category-container");
+    const chips = container.querySelectorAll("button");
+    chips.forEach(chip => {
+      chip.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container-high";
+    });
+    el.className = "cat-pill active flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-md text-label-md transition-all shadow-sm";
+  }
+
+  function selectAccount(btn) {
+    const btns = document.querySelectorAll(".acc-btn");
+    btns.forEach(b => {
+      b.className = "acc-btn flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-transparent text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all truncate";
+    });
+    btn.className = "acc-btn active flex items-center justify-center gap-1 py-2 px-1 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md shadow-sm transition-all truncate";
+  }
+
+  function toggleSMS() {
+    const badge = document.getElementById("sms-toggle");
+    const banner = document.getElementById("sms-context");
+    const note = document.getElementById("expense-note");
+    
+    if (rawAmount === "349") {
+      rawAmount = "0";
+      banner.style.display = "none";
+      note.value = "";
+      badge.classList.remove("bg-surface-container-high");
+      badge.classList.add("bg-surface-container-low", "opacity-50");
+    } else {
+      rawAmount = "349";
+      banner.style.display = "flex";
+      note.value = "Zepto Snacks";
+      badge.classList.add("bg-surface-container-high");
+      badge.classList.remove("bg-surface-container-low", "opacity-50");
+    }
+    updateAmountDisplay();
+  }
+
+  function saveExpense() {
+    const btn = document.getElementById("save-btn");
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Saved!</span>`;
+    btn.classList.add("bg-secondary");
+    setTimeout(() => {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check</span><span>Done</span>`;
+      }
+    }, 450);
+  }
+
+  // Initialize initial default mock state
+  updateAmountDisplay();
+</script><div class="w-full flex justify-center pb-space-sm mt-auto"><div class="w-32 h-1 rounded-full bg-on-surface-variant/40"></div></div></main>
+
+</body></html>

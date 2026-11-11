@@ -60,7 +60,9 @@ fun KharchaNavHost() {
                         label = {
                             Text(
                                 text = screen.title,
-                                style = MaterialTheme.typography.labelSmall
+                                style = MaterialTheme.typography.labelSmall,
+                                maxLines = 1,
+                                softWrap = false
                             )
                         },
                         colors = NavigationBarItemDefaults.colors(

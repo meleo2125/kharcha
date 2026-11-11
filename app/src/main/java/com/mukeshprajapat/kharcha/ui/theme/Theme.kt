@@ -19,49 +19,51 @@ import androidx.core.view.WindowCompat
 private val LightColorScheme = lightColorScheme(
     primary = TealPrimary,
     onPrimary = SurfaceLight,
-    primaryContainer = TealPrimaryContainerLight,
+    primaryContainer = TealContainerLight,
     onPrimaryContainer = TealPrimary,
     secondary = TurmericAccent,
-    onSecondary = OnSurfaceLight,
-    secondaryContainer = TurmericAccentContainer,
-    onSecondaryContainer = OnSurfaceLight,
+    onSecondary = SurfaceLight,
+    secondaryContainer = TurmericContainerLight,
+    onSecondaryContainer = TurmericContainerDark,
     error = ExpenseDebit,
     onError = SurfaceLight,
-    errorContainer = ExpenseDebitContainer,
+    errorContainer = ExpenseDebitContainerLight,
     onErrorContainer = ExpenseDebit,
     background = BackgroundLight,
     onBackground = OnSurfaceLight,
     surface = SurfaceLight,
     onSurface = OnSurfaceLight,
     surfaceVariant = SurfaceVariantLight,
-    onSurfaceVariant = OnSurfaceVariantLight
+    onSurfaceVariant = OnSurfaceVariantLight,
+    outline = OutlineLight
 )
 
 private val DarkColorScheme = darkColorScheme(
     primary = TealPrimaryDark,
-    onPrimary = SurfaceDark,
-    primaryContainer = TealPrimaryContainerDark,
+    onPrimary = BackgroundDark,
+    primaryContainer = TealContainerDark,
     onPrimaryContainer = TealPrimaryDark,
     secondary = TurmericAccent,
-    onSecondary = OnSurfaceDark,
-    secondaryContainer = TurmericAccentContainer,
-    onSecondaryContainer = OnSurfaceDark,
+    onSecondary = BackgroundDark,
+    secondaryContainer = TurmericContainerDark,
+    onSecondaryContainer = TurmericAccent,
     error = ExpenseDebit,
-    onError = SurfaceLight,
-    errorContainer = ExpenseDebitContainer,
+    onError = BackgroundDark,
+    errorContainer = ExpenseDebitContainerDark,
     onErrorContainer = ExpenseDebit,
     background = BackgroundDark,
     onBackground = OnSurfaceDark,
     surface = SurfaceDark,
     onSurface = OnSurfaceDark,
     surfaceVariant = SurfaceVariantDark,
-    onSurfaceVariant = OnSurfaceVariantDark
+    onSurfaceVariant = OnSurfaceVariantDark,
+    outline = OutlineDark
 )
 
 @Composable
 fun KharchaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = false, // Keep Kharcha brand default
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -79,7 +81,7 @@ fun KharchaTheme(
             val window = (view.context as? Activity)?.window
             if (window != null) {
                 window.statusBarColor = colorScheme.background.toArgb()
-                window.navigationBarColor = colorScheme.background.toArgb()
+                window.navigationBarColor = colorScheme.surface.toArgb()
                 WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
                 WindowCompat.getInsetsController(window, view).isAppearanceLightNavigationBars = !darkTheme
             }
