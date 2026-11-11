@@ -1,11 +1,41 @@
 {
   "version": 2,
   "skills": {
+    "android-architecture": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/architecture/android-architecture/SKILL.md",
+      "computedHash": "8d232d0c36939344da80afb225793ffb662b2821127517d3e66fd2cd2b8fc28c"
+    },
+    "android-coroutines": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/concurrency_and_networking/android-coroutines/SKILL.md",
+      "computedHash": "2c445436204215787f1ed2463b8cf8ab7839d0799812c1a4cda0989ece149b5c"
+    },
     "android-permissions-security": {
       "source": "android/skills",
       "sourceType": "github",
       "skillPath": "security/android-permissions-security/SKILL.md",
       "computedHash": "652fc267098be2f42d556305bc18925640ebc7f2a24c907a9d22da5b11647787"
+    },
+    "android-viewmodel": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/architecture/android-viewmodel/SKILL.md",
+      "computedHash": "4ea9d4ab8e904288f98e98ff5270208c03c4ee5883bb3fd72bb82d3c945271b5"
+    },
+    "compose-performance-audit": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/performance/compose-performance-audit/SKILL.md",
+      "computedHash": "3926858fa986bb6236e0542a988a6718a9c83fb6e221497e7e7272f0c2c6de86"
+    },
+    "compose-ui": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/ui/compose-ui/SKILL.md",
+      "computedHash": "46d5cad01721a934e61610d055dfe4bdb0d1909ed26fdd7d7a229a545ce1ae56"
     },
     "design-taste-frontend": {
       "source": "Leonxlnx/taste-skill",
