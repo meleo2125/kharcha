@@ -1,0 +1,55 @@
+[
+  {
+    "sender": "JM-KOTAKD-S",
+    "body": "Sent Rs.250.00 from XX0001 to Test Mart on 10-Nov-26. UPI ref no. 100000000001. Not you? Tap https://example.com/x to report -Kotak",
+    "expected": {
+      "direction": "DEBIT",
+      "amountPaise": 25000,
+      "payee": "Test Mart",
+      "accountLast4": "0001",
+      "dedupeKey": "100000000001",
+      "bankCode": "KOTAK",
+      "ignore": false
+    }
+  },
+  {
+    "sender": "AD-KOTAKD-S",
+    "body": "Received Rs.150.00 from TEST PERSON in your Kotak811 a/c XX0001 on 15-Sep-26. UPI ref no. 100000000002. View balance: https://example.com/y -Kotak",
+    "expected": {
+      "direction": "CREDIT",
+      "amountPaise": 15000,
+      "payee": "TEST PERSON",
+      "accountLast4": "0001",
+      "dedupeKey": "100000000002",
+      "bankCode": "KOTAK",
+      "ignore": false
+    }
+  },
+  {
+    "sender": "JX-KOTAKB-S",
+    "body": "Rs.37099 credited to your Kotak Bank a/c XX0001 via NEFT from beneficiary TEST EMPLOYER LTD. UTR Ref. TEST000000000001",
+    "expected": {
+      "direction": "CREDIT",
+      "amountPaise": 3709900,
+      "payee": "TEST EMPLOYER LTD",
+      "accountLast4": "0001",
+      "dedupeKey": "TEST000000000001",
+      "bankCode": "KOTAK",
+      "ignore": false
+    }
+  },
+  {
+    "sender": "JX-KOTAKB-S",
+    "body": "123456 is your OTP. Do not share it with anyone.",
+    "expected": {
+      "ignore": true
+    }
+  },
+  {
+    "sender": "JM-KOTAKB-P",
+    "body": "Pre-approved personal loan offer up to Rs 5 Lakhs for you! Tap here: https://example.com/offer",
+    "expected": {
+      "ignore": true
+    }
+  }
+]
